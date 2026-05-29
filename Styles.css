@@ -1,4 +1,26 @@
 body{
-    background-color:#f5f5f5;
-    font-family:Arial, sans-serif;
+    background:#f5f5f5;
+    font-family:Arial,sans-serif;
+}
+
+.hero{
+    background:linear-gradient(
+        rgba(165,0,52,.8),
+        rgba(0,77,152,.8)
+    );
+    color:white;
+    padding:100px 20px;
+}
+
+.card img{
+    height:220px;
+    object-fit:cover;
+}
+
+.card{
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
 }
