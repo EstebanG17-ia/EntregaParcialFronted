@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ================================================== */
+/* ESTRUCTURA GENERAL */
+/* ================================================== */
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: #f1f1f1;
+
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+main {
+    flex: 1;
+}
+
+
+/* ================================================== */
+/* NAVBAR */
+/* ================================================== */
+
+.custom-navbar {
+    padding: 15px 0;
+
+    background-color: #001f5b;
+}
+
+.navbar-brand {
+    color: white !important;
+
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-link {
+    margin-left: 15px;
+
+    color: white !important;
+
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffcc00 !important;
+}
+
+
+/* ================================================== */
+/* HERO */
+/* ================================================== */
+
+.hero {
+    background:
+        linear-gradient(
+            rgba(0, 32, 91, 0.75),
+            rgba(165, 0, 52, 0.75)
+        ),
+        url("https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=1600");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+    text-align: center;
+}
+
+.overlay {
+    padding: 90px 20px;
+}
+
+.hero h1 {
+    margin-bottom: 15px;
+
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.3rem;
+}
+
+.logo-barca {
+    width: 120px;
+
+    margin-top: 25px;
+}
+
+
+/* ================================================== */
+/* CARDS */
+/* ================================================== */
+
+.card {
+    overflow: hidden;
+
+    border: none;
+    border-radius: 15px;
+
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    height: 220px;
+
+    object-fit: cover;
+    object-position: 50% 20%;
+}
+
+.card-body {
+    background-color: white;
+}
+
+.card-title {
+    color: #001f5b;
+
+    font-weight: bold;
+}
+
+
+/* ================================================== */
+/* CONTENIDO */
+/* ================================================== */
+
+.container h2 {
+    margin-bottom: 15px;
+
+    color: #001f5b;
+}
+
+.container p {
+    margin-bottom: 15px;
+}
+
+
+/* ================================================== */
+/* LISTAS */
+/* ================================================== */
+
+.list-group-item {
+    font-size: 1rem;
+}
+
+
+/* ================================================== */
+/* FOOTER */
+/* ================================================== */
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+
+    background-color: #001f5b;
+    border-top: 5px solid #a50034;
+
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* ================================================== */
+/* RESPONSIVE - TABLETS */
+/* ================================================== */
+
+@media (max-width: 992px) {
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .card img {
+        height: 200px;
+    }
+}
+
+
+/* ================================================== */
+/* RESPONSIVE - MOVILES */
+/* ================================================== */
+
+@media (max-width: 768px) {
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .logo-barca {
+        width: 90px;
+    }
+
+    .card img {
+        height: 180px;
+    }
+
+    .navbar-brand {
+        font-size: 1.3rem;
+    }
+}
+
+
+/* ================================================== */
+/* RESPONSIVE - PANTALLAS PEQUEÑAS */
+/* ================================================== */
+
+@media (max-width: 576px) {
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .card img {
+        height: 160px;
+    }
+}
